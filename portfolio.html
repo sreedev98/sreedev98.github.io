@@ -78,24 +78,32 @@
 		}
 	</style>
 	<style>
-
-.pdfobject-container {
-	width: 100%;
-	max-width: 600px;
-	height: 600px;
-	margin: 2em 0;
-}
-
-.pdfobject { border: solid 1px #666; }
-#results { padding: 1rem; }
-.hidden { display: none; }
-.success { color: #4F8A10; background-color: #DFF2BF; }
-.fail { color: #D8000C; background-color: #FFBABA; }
-</style>
-
-</head>
 </head>
 <body>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navbar navbar-inverse navbar-static-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#portfolio">Portfolio/Clips</a></li>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container" id="home">
 			<div class="jumbotron">
 			<a class="profilePicture">
@@ -237,33 +245,7 @@ bylines in my name so far across four publications.</p>
 			<div class="featurette" id="resume">
 				<h2 class="featurette-heading">Resume</h2>
 				<div class="row">
-					<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
-<script>
-
-document.querySelector(".embed-link").addEventListener("click", function (e){
-
-	e.preventDefault();
-
-	this.setAttribute("class", "hidden");
-
-	var options = {
-		pdfOpenParams: {
-			pagemode: "thumbs",
-			navpanes: 0,
-			toolbar: 0,
-			statusbar: 0,
-			view: "FitV"
-		}
-	};
-
-	var myPDF = PDFObject.embed("Sreedev Krishnakumar_CV.pdf", "#pdf", options);
-
-	var el = document.querySelector("#results");
-	el.setAttribute("class", (myPDF) ? "success" : "fail");
-	el.innerHTML = (myPDF) ? "My resume!" : "Uh-oh, the embed didn't work.";
-
-});
-</script>
+					<a href="https://sreedev98.github.io/Sreedev%20Krishnakumar_CV.pdf">Click here to view/download my resume</a>
 				</div>
 			</div>
 
