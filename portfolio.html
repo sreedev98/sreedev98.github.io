@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	
-	<!-- Make sure you add a title -->
+
 	<title>Sreedev Krishnakumar - Portfolio</title>
 	
 	
@@ -14,8 +12,6 @@
 	<meta name="keywords" content="Journalism, Sreedev Krishnakumar, Sreedev, Krishnakumar, India, Mumbai, Tamil Nadu, Maharashtra, Kerala, Asian College of Journalism, Data Journalism, Tech Journalism">
 	<meta name="author" content="Sreedev Krishnakumar">
 
-	
-	<!-- Fill Out Twitter information (for when people share this page on Twitter) -->
 	<meta name="twitter:card" value="summary">
 	<meta name="twitter:creator" value="@"/>
 	<meta name="twitter:url" content="https://sreedev98.github.io/portfolio"/>
@@ -23,22 +19,17 @@
 	<meta name="twitter:description" content="The digital portfolio of Sreedev Krishnakumar."/>
 	<meta name="twitter:image" content="https://sreedev98.github.io/userimage.jpg"/>
 	
-	
-	<!-- Fill Out Facebook account information (for when people like this page on Facebook) -->
 	<meta property="og:url" content="https://sreedev98.github.io/portfolio"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:title" content="Sreedev's Portfolio"/>
 	<meta property="og:description" content="The digital portfolio of Sreedev Krishnakumar.">
 	<meta property="og:image" content="https://sreedev98.github.io/userimage.jpg"/> 
-	
-	
-	<!-- Don't edit these next few lines -->
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/resumable.js/1.0/resumable.js"></script>
 	<![endif]-->
 	
-	<!-- Ignore these -->
 	<link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
 	<script src="jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -86,27 +77,6 @@
 			border-radius: 60%;
 		}
 	</style>
-	
-<style>
-/*
-PDFObject appends the classname "pdfobject-container" to the target element.
-This enables you to style the element differently depending on whether the embed was successful.
-In this example, a successful embed will result in a large box.
-A failed embed will not have dimensions specified, so you don't see an oddly large empty box.
-*/
-
-.pdfobject-container {
-	width: 100%; !important
-	height: auto;
-	margin: 2em 0;
-}
-
-.pdfobject { border: solid 1px #666; }
-#results { padding: 1rem; }
-.hidden { display: none; }
-.success { color: #4F8A10; background-color: #DFF2BF; }
-.fail { color: #D8000C; background-color: #FFBABA; }
-</style>
 
 </head>
 </head>
@@ -252,34 +222,10 @@ bylines in my name so far across four publications.</p>
 			<div class="featurette" id="resume">
 				<h2 class="featurette-heading">Resume</h2>
 				<div class="row">
-									<p><a href="#" class="embed-link">Click here to view my resume</a></p>
-<div id="results" class="hidden"></div>
-<div id="pdf"></div>
-<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
+					<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
 <script>
-
-document.querySelector(".embed-link").addEventListener("click", function (e){
-
-	e.preventDefault();
-
-	this.setAttribute("class", "hidden");
-
-	var options = {
-		pdfOpenParams: {
-			pagemode: "thumbs",
-			navpanes: 0,
-			toolbar: 0,
-			statusbar: 0,
-			view: "FitV"
-		}
-	};
-
-	var myPDF = PDFObject.embed("Sreedev Krishnakumar_CV.pdf", "#pdf", options);
-
-	
-});
+PDFObject.embed("Sreedev Krishnakumar_CV.pdf");
 </script>
-
 				</div>
 			</div>
 
