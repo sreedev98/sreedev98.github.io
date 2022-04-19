@@ -77,15 +77,24 @@
 			border-radius: 60%;
 		}
 	</style>
-	
-<style>
+	PDFObject appends the classname "pdfobject-container" to the target element.
+This enables you to style the element differently depending on whether the embed was successful.
+In this example, a successful embed will result in a large box.
+A failed embed will not have dimensions specified, so you don't see an oddly large empty box.
+*/
+
 .pdfobject-container {
-    max-width: 100%;
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 	height: 600px;
-	border: 10px solid rgba(0,0,0,.2);
-	margin: 0;
+	margin: 2em 0;
 }
+
+.pdfobject { border: solid 1px #666; }
+#results { padding: 1rem; }
+.hidden { display: none; }
+.success { color: #4F8A10; background-color: #DFF2BF; }
+.fail { color: #D8000C; background-color: #FFBABA; }
 </style>
 
 </head>
@@ -232,12 +241,32 @@ bylines in my name so far across four publications.</p>
 			<div class="featurette" id="resume">
 				<h2 class="featurette-heading">Resume</h2>
 				<div class="row">
-					
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
-<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
+					<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
 <script>
-var $container = $("#my-pdf");
-PDFObject.embed("Sreedev Krishnakumar_CV.pdf", $container);
+
+document.querySelector(".embed-link").addEventListener("click", function (e){
+
+	e.preventDefault();
+
+	this.setAttribute("class", "hidden");
+
+	var options = {
+		pdfOpenParams: {
+			pagemode: "thumbs",
+			navpanes: 0,
+			toolbar: 0,
+			statusbar: 0,
+			view: "FitV"
+		}
+	};
+
+	var myPDF = PDFObject.embed("Sreedev Krishnakumar_CV.pdf", "#pdf", options);
+
+	var el = document.querySelector("#results");
+	el.setAttribute("class", (myPDF) ? "success" : "fail");
+	el.innerHTML = (myPDF) ? "My resume!" : "Uh-oh, the embed didn't work.";
+
+});
 </script>
 				</div>
 			</div>
