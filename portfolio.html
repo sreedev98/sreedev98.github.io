@@ -77,6 +77,16 @@
 			border-radius: 60%;
 		}
 	</style>
+	
+<style>
+.pdfobject-container {
+    max-width: 100%;
+	width: 600px;
+	height: 600px;
+	border: 10px solid rgba(0,0,0,.2);
+	margin: 0;
+}
+</style>
 
 </head>
 </head>
@@ -222,9 +232,12 @@ bylines in my name so far across four publications.</p>
 			<div class="featurette" id="resume">
 				<h2 class="featurette-heading">Resume</h2>
 				<div class="row">
-					<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
+					
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+<script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
 <script>
-PDFObject.embed("Sreedev Krishnakumar_CV.pdf");
+var $container = $("#my-pdf");
+PDFObject.embed("Sreedev Krishnakumar_CV.pdf", $container);
 </script>
 				</div>
 			</div>
