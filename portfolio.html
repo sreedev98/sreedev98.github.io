@@ -129,8 +129,32 @@
     text-align: left;
   }
 }
-</style>
-	
+
+details {
+  user-select: none;
+}
+
+details>summary span.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+</style>	
 </head>
 <body>
 
@@ -287,11 +311,40 @@ bylines in my name so far across four publications.</p>
 							<img class="featurette-image img-responsive" src="images/tn_sexratio.jpg" alt="Sex Ratio">
 						</a>
 						<p><center><a href="https://app.skiff.org/docs/fdc9eef7-1c80-4a61-ae16-86abc35b4ee7#kFFQ92bzEToYX/GngQ5XaYLRqjJAXnT1QXMKzZ19NQs=" target="_blank">TN contests NFHS data on sex ratio at birth in the state</a></center>
-						Although the National Family Health Survey claims that there has been a drop in Tamil Nadu's child sex ratio, state authorities are now questioning the veracity of this using their own data.</p>
+						Although the National Family Health Survey claims that there has been a drop in Tamil Nadu's child sex ratio, state authorities are now questioning the veracity of this using their own data.</p>	
+					
 					</div>
+				
 			</div>
-	
+			
+			<hr class="featurette-divider">
 
+			<div class="featurette" id="data">
+<details>
+  <summary>
+    <b>Click here to expand and see my data visualisations</b>
+    <span class="icon">👇</span>
+  </summary>
+ <iframe title="UP 2022: Voter Turnout in Phase 6 (in percentages)" aria-label="Grouped Column Chart" id="datawrapper-chart-OXMoQ" src="https://datawrapper.dwcdn.net/OXMoQ/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="325"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<hr>
+<div class='tableauPlaceholder' id='viz1650452293100' style='position: relative'><noscript><a href='#'><img alt='Cumulative C02 emissions (1750-2020) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;Whopollutesthemost&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Whopollutesthemost&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;Whopollutesthemost&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650452293100');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<hr>
+<div class='tableauPlaceholder' id='viz1650453140600' style='position: relative'><noscript><a href='#'><img alt='Breakdown of public climate finance provided by developed countries(in USD billions) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;Breakdownofpublicclimatefinanceprovidedbydevelopedcountries&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Breakdownofpublicclimatefinanceprovidedbydevelopedcountries&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;Breakdownofpublicclimatefinanceprovidedbydevelopedcountries&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650453140600');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<hr>
+<div class='tableauPlaceholder' id='viz1650453490600' style='position: relative'><noscript><a href='#'><img alt='Climate finance provided by OECD countries ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimatefundingbyOECD&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ClimatefundingbyOECD&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimatefundingbyOECD&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1650453490600');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<hr>
+<div class="flourish-embed" data-src="story/1162426"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<hr>
+<iframe title="Polarised opinion on CAA-NRC benefited AAP in 2020 Delhi Assembly Elections" aria-label="Table" id="datawrapper-chart-JtiJT" src="https://datawrapper.dwcdn.net/JtiJT/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="695"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+</details>
+	
+  </div>
+
+</div>
+
+
+			</div>
+			
 			<hr class="featurette-divider">
 
 			<div class="featurette" id="resume">
