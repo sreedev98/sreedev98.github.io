@@ -1,0 +1,245 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreedev Krishna Kumar - Data Journalist</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header, .content {
+            width: 100%;
+        }
+		.download-button {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background-color: #2980b9;
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		.download-button:hover {
+			background-color: #1c5986;
+		}
+        header h1 {
+            font-size: 35px;
+            color: #000000;
+            margin-bottom: 1px;
+			text-align: center;
+        }
+        header p {
+            font-size: 20px;
+            color: #000000;
+			text-align: center;
+			margin-bottom: 5px;
+        }
+        .contact-info {
+            display: flex;
+			justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 16px;
+            color: #333;
+			margin-bottom: 5px;
+        }
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Inline contact info for larger screens */
+        @media (min-width: 600px) {
+            .contact-info {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .contact-info p, .contact-info a {
+                margin-right: 15px;
+            }
+        }
+        /* Sidebar Styling */
+        .sidebar {
+            width: 25%;
+            padding: 0px 10px;
+            background-color: #f9f9f9;
+            margin-right: 20px;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            color: #000000;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .skills-list ul, .languages-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .skills-list li, .languages-list li {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        /* Main Content Styling */
+        .main-content {
+            width: 70%;
+        }
+        h2 {
+            font-size: 20px;
+            color: #000000;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .experience-item, .education-item, .course-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3, .education-item h3 {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 2px;
+        }
+        .experience-item p, .education-item p {
+            font-size: 13px;
+            color: #333333;
+        }
+		.course-item li {
+			font-size: 13px;
+			color: #000000;
+		}
+        .experience-item .date, .education-item .date {
+            font-size: 14px;
+            color: #000;
+			margin-bottom: 2px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 800px) {
+            .sidebar, .main-content {
+                width: 100%;
+                margin-right: 0;
+            }
+            header, .section {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sreedev Krishna Kumar</h1>
+        <p><b>Data Journalist</b></p>
+        <div class="contact-info">
+            sreedev98[at]protonmail[dot]com | <a href="https://linkedin.com/in/sreedevkkumar">linkedin.com/in/sreedevkkumar</a>
+        </div><a href="https://sreedev98.github.io/Sreedev%20Resume_web.pdf" class="download-button" target="_blank">Download PDF</a><hr /><br />
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <section>
+            <h2>Core Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>Research and reporting</li>
+                    <li>Data visualization and analysis (Tableau, Power BI, Flourish, Datawrapper)</li>
+                    <li>Writing and editing</li>
+                    <li>Python and R programming languages</li>
+                    <li>Microsoft Excel and Google Sheets</li>
+                    <li>Content Management System (WordPress, Grav, Joomla)</li>
+                    <li>HTML and CSS</li>
+                    <li>Photo editing (Pixlr, Paint.NET, Adobe Photoshop)</li>
+                    <li>Video editing (DaVinci Resolve, Open Shot)</li>
+                    <li>Audio editing (Audacity, Adobe Audition)</li>
+                    <li>Interactive/immersive storytelling (Shorthand, Infogram, Genially, Twine)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <div class="languages-list">
+                <ul>
+                    <li>English</li>
+                    <li>Malayalam</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section>
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Data Journalist - Hindustan Times</h3>
+                <p class="date">Jan 2024 - Present | Mumbai</p>
+                <p>Part of Hindustan Times' Data & Political Economy team, writing deeply researched and data-driven stories, most of which appear on page one. Occasionally collaborate with other reporters on data research and analysis.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Correspondent (Data) - Moneycontrol</h3>
+                <p class="date">Jun 2022 - Jan 2024 | Mumbai</p>
+                <p>Authored nearly 100 in-depth, data-driven stories under tight deadlines with minimal supervision. Launched the 'Weekly Numerics' series to spotlight key data trends and maintained the 'MC Pro Economic Tracker' offering weekly snapshots of the Indian economy. Developed engaging content for social media using public datasets.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Intern - The Hindu</h3>
+                <p class="date">Jun 2019 | Mumbai</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Asian College of Journalism</h3>
+                <p class="date">Jul 2021 - May 2022</p>
+                <p>Postgraduate Diploma | Integrated Multimedia Journalism. Trained in innovative and immersive storytelling techniques and co-anchored the Asian College of Journalism segment of the Global News Relay hosted by Leeds Trinity University.</p>
+            </div>
+            <div class="education-item">
+                <h3>Wilson College</h3>
+                <p class="date">Jun 2017 - Oct 2020</p>
+                <p>Bachelor of Arts | Political Science. Vice President of the Political Science Association of Wilson College (2019-20). Participated in the Co-operative Education Programme.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fellowships & Courses</h2>
+            <div class="course-item">
+                <ul><li>Data Journalism Accelerator led by How India Lives and supported by the Google News Initiative</li>
+                <li>Python 3 Course offered by Codecademy</li>
+                <li>Data Visualization and Information Design from Domestika</li>
+                <li>Introduction to Data Analytics course by IBM (Coursera)</li>
+				</ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
